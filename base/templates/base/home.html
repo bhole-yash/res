@@ -1,6 +1,15 @@
 
 {% load static %}
 
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +19,14 @@
 	
 </head>
 <body>
-	<br>
+
+<video autoplay muted loop id="myVideo">
+  <source src="{% static 'images/Network.webm' %}" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <br>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
@@ -67,7 +83,7 @@
 					<p><div class="alert alert-primary" role="alert">
                         Django+Python
                       </div>
-                      
+
                       <div class="alert alert-success" role="alert">
                         Current technical Affairs 👨‍💻🚀🛸👨‍💻
                       </div>
@@ -80,7 +96,7 @@
                       <div class="alert alert-info" role="alert">
                         Unit testing & troubleshooting
                       </div>
-                      
+
                       <div class="alert alert-dark" role="alert">
                         Opensource(Git,Shell scripting,Shared hosting)
                       </div></p>
@@ -113,6 +129,10 @@
 		<br>
 	</div>
 
+
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
 
 </body>
 </html>
