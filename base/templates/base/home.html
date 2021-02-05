@@ -10,11 +10,13 @@
 
 
 
-<!DOCTYPE html>
+<html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Yash Bhole</title>
 	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	
 </head>
@@ -30,11 +32,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
-				<div class="card card-body h-100  border-info" id="profile-wrapper">
+				<div id="overlay">
+				<div class="card card-body h-110  border-info" id="profile-wrapper">
+
 					<img id="profile-pic" src="{% static 'images/yash.jpg' %}" >
 					<hr>
 					<h4>Hi I'm Yash!</h4>
 					<p>I love coding, doing research and collaborating</p>
+					</div>
 				</div>
 			</div>
 

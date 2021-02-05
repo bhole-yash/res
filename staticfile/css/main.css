@@ -8,20 +8,11 @@
 }
 
 
-.content {
-}
-
 #profile-wrapper{
 	text-align: center;
 }
 
-#profile-pic{
-	width:150px;
-	height: 200px;
-	border-radius: 50%;
-	margin-left: auto;
-  	margin-right: auto;
-}
+
 
 ul{
 	padding: 0;
@@ -38,3 +29,56 @@ ul{
 	width:20px;
 	height: 20px;
 }
+
+
+
+
+
+@media screen and (min-width: 992px) {
+#profile-pic{
+	width:70%;
+	height: 70%;
+	border-radius: 50%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+}
+
+@media screen and (max-width: 991.99px) and (min-width: 768px){
+	.overlay{
+		position: fixed; /* Sit on top of the page content */
+		  display: None; /* Hidden by default */
+		  width: 100%; /* Full width (cover the whole page) */
+		  height: 100%; /* Full height (cover the whole page) */
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+		  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+		  cursor: pointer; /* Add a pointer on hover */
+
+}
+}
+
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 767.98px) {
+	.col-md-3{
+		padding-bottom: 5px;
+	}
+	.col-md-6{
+		padding-bottom: 5px;
+	}
+	.card card-body h-100{
+		padding-bottom: 5px;
+	}
+	#profile-pic{
+	width:50%;
+	height: 50%;
+	border-radius: 50%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+}
+
